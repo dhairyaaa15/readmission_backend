@@ -10,6 +10,10 @@ CORS(app)  # Enable CORS for all routes
 # Load the trained model (replace 'model.sav' with your actual model filename)
 model = joblib.load('logisticmodel.sav')
 
+@app.route('/')
+def welcome():
+    return "Welcome to the Patient Readmission Prediction Application!"
+
 # Define the predict endpoint
 @app.route('/predict', methods=['POST'])
 def predict():
