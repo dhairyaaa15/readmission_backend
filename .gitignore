@@ -1,4 +1,3 @@
 env
 
-logisticmodel.sav
-randomforest.sav
+*.save
